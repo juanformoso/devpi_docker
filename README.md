@@ -2,24 +2,24 @@
 
 Docker container for using devpi server with ubuntu, heavily inspired by (and some things borrowed from) [apihackers/docker-devpi](https://github.com/apihackers/docker-devpi)
 
-Docker image hosted in https://hub.docker.com/r/juanformoso/moto_devpi/
+Docker image hosted in https://hub.docker.com/r/juanformoso/devpi_docker/
 
 ### Getting the image
 
-    docker pull juanformoso/moto_devpi
+    docker pull juanformoso/devpi_docker
 
 ### Running your private pypi server
 
 The `$DEVPI_PASSWORD` environment variable will set the root password on first run.
 
 ```bash
-docker run -e "DEVPI_PASSWORD=password" -d -p 3141:3141 --name devpi juanformoso/moto_devpi
+docker run -e "DEVPI_PASSWORD=password" -d -p 3141:3141 --name devpi juanformoso/devpi_docker
 ```
 
 To mount your own local devpi cache directory:
 
 ```bash
-docker run -d -v /path/to/devpi/home:/devpi juanformoso/moto_devpi
+docker run -d -v /path/to/devpi/home:/devpi juanformoso/devpi_docker
 ```
 
 #### pip
