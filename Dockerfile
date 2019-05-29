@@ -1,4 +1,7 @@
 FROM juanformoso/ubuntu_python3_base
+LABEL maintainer="Juan Manuel Formoso <jformoso@gmail.com>"
+LABEL project="devpi_docker"
+LABEL description="Docker image to use devpi server with ubuntu"
 
 # install devpi server
 RUN pip install devpi-server && pip install devpi-client
