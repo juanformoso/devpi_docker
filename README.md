@@ -1,3 +1,5 @@
+![Docker Pulls](https://img.shields.io/docker/pulls/juanformoso/devpi_docker.svg)
+
 ### Summary
 
 Docker container for using devpi server with ubuntu, heavily inspired by (and some things borrowed from) [apihackers/docker-devpi](https://github.com/apihackers/docker-devpi)
